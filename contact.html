@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>A Social Ethereum Gambling Game -- ethercrash.io</title>
+    <link rel="canonical" href="https://ethercrash.io/contact.html" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="theme-color" content="#292d35" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href=" css/app-new-466a8470.css " />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-127247391-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-127247391-1");
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <nav id="top-bar">
+          <div class="title">
+            <a href="index.html">
+              <h1 class="hide-for-small-only">
+                <img src="../img/Logo200.png" style="padding-bottom: 5px" />
+              </h1>
+              <h1 class="show-for-small-only">
+                <img src="../img/Logoec.png" style="padding-bottom: 5px" />
+              </h1>
+            </a>
+          </div>
+          <div class="user-login">
+            <div class="register"><a href="register.html">Register</a></div>
+            <div class="login"><a href="login.html">Log in</a></div>
+          </div>
+        </nav>
+      </header>
+      <div class="page-content">
+        <link rel="stylesheet" href="css/account.css" />
+        <div class="container">
+          <div class="row profile">
+            <div class="col-md-4 col-md-offset-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Contact us</h3>
+                </div>
+                <div class="panel-body" class="center">
+                  <form
+                    accept-charset="UTF-8"
+                    role="form"
+                    action="contact.html"
+                    id="contact"
+                    method="post"
+                  >
+                    <fieldset>
+                      <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input
+                          class="form-control"
+                          placeholder="email"
+                          name="email"
+                          type="text"
+                          id="email"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea
+                          class="form-control"
+                          rows="10"
+                          placeholder="message"
+                          name="message"
+                          type="text"
+                          id="message"
+                          required
+                        >
+                        </textarea>
+                      </div>
+                      <br />
+                      <input
+                        class="sr-only"
+                        id="fp"
+                        name="fp"
+                        type="hidden"
+                        value=""
+                      />
+                      <input
+                        class="btn btn-lg btn-success btn-block"
+                        type="submit"
+                        value="Send!"
+                      />
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="ajax/libs/fingerprintjs2/1.5.1/fingerprint2.min.js"></script>
+        <script>
+          new Fingerprint2().get(function (fp) {
+            document.getElementById("fp").setAttribute("value", fp);
+          });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
